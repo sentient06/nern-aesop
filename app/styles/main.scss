@@ -162,11 +162,20 @@ $moralMargin: 40px;
 }
 
 .tale-text-wrapper {
-
-
   p {
     align-self: flex-start;
   }
-
-  
 }
+
+ruby {
+  ruby-align: center;
+
+  rt {
+    white-space: nowrap;
+  }
+}
+
+h1:has(ruby) {
+  padding-top: 15px !important;
+}
+

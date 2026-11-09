@@ -1,22 +1,88 @@
-import { useState } from 'react';
+import { Fragment, useState } from 'react';
 
-function DefaultText({ title, paragraphs, extraClass, scriptClass, setHoveredSentence, hoveredSentence }) {
+const makeTitle = (title, showGloss, glossTitle) => {
+  if (showGloss) {
+    const bases = title.split(' ');
+    const annotations = (
+      glossTitle ?? ''
+    ).split(' ');
+
+    return (
+      <h1>
+      {bases.map((base, i) => (
+        <Fragment key={i}>
+          {i > 0 && ' '}
+          <ruby>
+            {base.replaceAll('_', ' ')}
+            <rt>{annotations[i].replaceAll('_', ' ') ?? ''}</rt>
+          </ruby>
+        </Fragment>
+      ))}
+      </h1>
+    );
+  }
+  return (
+    <h1>
+      {title}
+    </h1>
+  )
+};
+
+
+function DefaultText({
+  title,
+  paragraphs,
+  extraClass,
+  scriptClass,
+  setHoveredSentence,
+  hoveredSentence,
+  gloss
+}) {
   const spanClassesArray = ['tale-text'];
   if (extraClass) spanClassesArray.push(extraClass);
   if (scriptClass) spanClassesArray.push(scriptClass);
   const spanClasses = spanClassesArray.join(' ');
+  const showGloss = Boolean(gloss);
+
+  const titleObj = makeTitle(title, showGloss, gloss?.title);
 
   return (
     <div className={`tale-text-wrapper ${scriptClass}`}>
-      <h1>
-        {title}
-      </h1>
+      {titleObj}
       {paragraphs.map((paragraph, paragraphIndex, arr) => {
         const isMoral = arr.length - 1 === paragraphIndex;
         return (
           <p key={paragraphIndex} className={isMoral ? 'moral' : ''}>
           {paragraph.map((sentence, sentenceIndex) => {
             const id = `${paragraphIndex}-${sentenceIndex}`;
+
+            if (showGloss) {
+              const bases = sentence.split(' ');
+              const annotations = (
+                gloss?.paragraphs?.[paragraphIndex]?.[sentenceIndex] ?? ''
+              ).split(' ');
+
+              return (
+                <span
+                  key={sentenceIndex}
+                  className={`${spanClasses} idx-${id} ${
+                    hoveredSentence === id ? 'highlight' : ''
+                  }`}
+                  onMouseEnter={() => setHoveredSentence(id)}
+                  onMouseLeave={() => setHoveredSentence(null)}
+                >
+                  {bases.map((base, i) => (
+                    <Fragment key={i}>
+                      {i > 0 && ' '}
+                      <ruby>
+                        {base.replaceAll('_', ' ')}
+                        <rt>{annotations[i].replaceAll('_', ' ') ?? ''}</rt>
+                      </ruby>
+                    </Fragment>
+                  ))}
+                </span>
+              );
+            }
 
             return (
               <span
@@ -27,7 +93,7 @@ function DefaultText({ title, paragraphs, extraClass, scriptClass, setHoveredSen
                 onMouseEnter={() => setHoveredSentence(id)}
                 onMouseLeave={() => setHoveredSentence(null)}
               >
-                {sentence}
+                {sentence.replaceAll('_', ' ')}
               </span>
             );
           })}
@@ -124,7 +190,8 @@ export function SindarinSection({
         options={[
           { value: 'beleriand', label: 'Beleriand' },
           { value: 'tengwar', label: 'Tengwar' },
-          { value: 'roman', label: 'Roman' }
+          { value: 'roman', label: 'Roman' },
+          { value: 'gloss', label: 'Transliteration' }
         ]}
       />
       <div className="tale-box">
@@ -155,6 +222,16 @@ export function SindarinSection({
             extraClass="roman"
             setHoveredSentence={setHoveredSentence}
             hoveredSentence={hoveredSentence}
+          />
+        )}
+        { scriptType === 'gloss' && (
+          <DefaultText
+            title={roman.title}
+            paragraphs={roman.paragraphs}
+            extraClass="roman"
+            setHoveredSentence={setHoveredSentence}
+            hoveredSentence={hoveredSentence}
+            gloss={transliteration}
           />
         )}
       </div>
