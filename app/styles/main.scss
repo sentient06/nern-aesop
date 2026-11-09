@@ -1,0 +1,172 @@
+@use "fonts";
+@use "variables";
+@use "layout";
+@use "variables" as *;
+
+.tengwar {
+  font-family: 'TengwarTelcontar', 'TengwarAnnatarGlaemunicode';
+  line-height: 1.5;
+  font-size: 1.1em;
+  text-decoration: none;
+  font-weight: normal !important;
+}
+
+.tengwar-number {
+  font-family: 'TengwarAnnatarGlaemunicode';
+}
+
+body {
+  background: $page-colour;
+}
+
+$moralMargin: 40px;
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  .tale-wrapper {
+    display: flex;
+    flex-direction: row;
+    & > div {
+      flex-grow: 1;
+      // flex-basis: 25%;
+      max-width: 31rem;
+    }
+
+    .tale-group,
+    .tale-image {
+    }
+
+    .tale-image {
+      flex-grow: 1;
+    }
+
+    .tale-group {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      flex-grow: 2;
+
+      .radio-group {
+        display: flex;
+      }
+      .tale-box {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 2;
+
+        .tale-text-wrapper {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          flex-grow: 2;
+
+          p.moral {
+            margin-top: auto;
+            padding-top: $moralMargin;
+            position: relative;
+
+            &:before {
+              content: '';
+              height: 1px;
+              background-color: $dark-colour;
+              position: absolute;
+              top: $moralMargin - 15px;
+              left: 40px;
+              right: 0;
+              bottom: $moralMargin - 4px;
+            }
+            &:after {
+              content: 'Moral';
+              position: absolute;
+              top: $moralMargin - 20px;
+              left: 0;
+              font-family: Arial, sans-serif;
+              font-size: 12px;
+              line-height: 12px;
+              font-variant: small-caps;
+              color: $dark-colour;
+            }
+          }
+        }
+
+        .tale-text {
+          position: relative;
+          &:after {
+            content: ' ';
+          }
+        }
+      }
+    }
+  }
+}
+
+.tale-wrapper {
+  gap: 10px;
+}
+
+.tale-group {
+  border: 1px solid $dark-colour;
+  border-radius: 3px;
+  background: $light-colour;
+  padding: 10px;
+
+  .radio-group {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    label {
+      font-size: 0.7em;
+      font-variant: small-caps;
+      border: 1px solid $dark-colour;
+      padding: 2px 5px;
+      cursor: pointer;
+      border-radius: 3px;
+
+      &:hover {
+        color: $anti-light;
+        border-color: $anti-light;
+      }
+
+      &:has(input[type="radio"]:checked) {
+        background: $dark-colour;
+        color: $anti-dark;
+      }
+
+      input[type="radio"] {
+        display: none;
+      }
+    }
+  }
+}
+
+.tale-box {
+  h1 {
+    margin: 0;
+    padding: 0;
+    line-height: 1.7em;
+  }
+  p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6em;
+    margin-top: 10px;
+    .highlight {
+      background-color: #fff3a3;
+    }
+  }
+}
+
+.tale-text {
+  line-height: 1em;
+}
+
+.tale-text-wrapper {
+
+
+  p {
+    align-self: flex-start;
+  }
+
+  
+}

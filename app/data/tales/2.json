@@ -1,0 +1,81 @@
+{
+  "greek": {
+    "original": {
+      "title": "Ἀγαθὰ καὶ κακά.",
+      "paragraphs": [
+        [
+          "Ξύλινόν τις Ἑρμῆν κατασκευάσας καὶ προσενεγκών εἰς ἀγορὰν ἐπώλει:",
+          "μηδενὸς δὲ ὠνητοῦ προσιόντος,",
+          "ἐκκαλέσασθαί τινας βουλόμενος,",
+          "ἐβόα ὡς ἀγαθοποιὸν δαίμονα καὶ κέρδους δωρητικὸν πιπράσκει.",
+          "Τῶν δὲ παρατυχόντων τινὸς εἰπόντος πρὸς αὐτόν:",
+          "\"Ὦ οὗτος,",
+          "καὶ τί τοῦτον τοιοῦτον ὄντα πωλεῖς,",
+          "δέον τῶν παρ' αὐτοῦ ὠφελειῶν ἀπολαύειν;\"",
+          "ἀπεκρίνατο ὅτι ἐγὼ μὲν ταχείας ὠφελείας τινὸς δέομαι,",
+          "αὐτὸς δὲ βραδέως εἴωθε τὰ κέρδη περιποιεῖν."
+        ],
+        [
+          "Πρὸς ἄνδρα αἰσχροκερδῆ μηδὲ θεῶν πεφροντικότα ὁ λόγος εὔκαιρος."
+        ]
+      ]
+    }
+  },
+  "english": {
+    "translation": {
+      "title": "The Statue Seller",
+      "paragraphs": [
+        [
+          "A man fashioned a wooden Hermes, brought it to the marketplace, and offered it for sale:",
+          "and since no buyer came forward,",
+          "wishing to call some people out,",
+          "he proclaimed that he was selling a wish-fulfilling god who brought profit to its owner.",
+          "And when one of those present said to him:",
+          "\"Hey you,",
+          "why are you putting such a thing up for sale,",
+          "instead of enjoying its benefits yourself?\"",
+          "The man answered, \"I am in need of some benefits now,",
+          "but he happens to distribute them slowly.\""
+        ],
+        [
+          "This fable suits a man who is so greedy for gain that he has no regard even for the gods."
+        ]
+      ] 
+    }
+  },
+  "sindarin": {
+    "transliteration": {
+      "title": "?",
+      "paragraphs": [
+        [
+          "?"
+        ],
+        [
+          "?"
+        ]
+      ]
+    },
+    "roman": {
+      "title": "?",
+      "paragraphs": [
+        [
+          "?"
+        ],
+        [
+          "?"
+        ]
+      ]
+    },
+    "tengwar": {
+    },
+    "glossary": [
+      "ennista",
+      "minegel",
+      "elia",
+      "erelia",
+      "laelo"
+    ]
+  },
+  "chambry": "1",
+  "perry": "274"
+}

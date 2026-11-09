@@ -1,0 +1,27 @@
+@use "variables" as *;
+
+body {
+  margin: 0;
+  color: $text-colour;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+nav {
+  background: $primary-colour;
+  padding: 1rem;
+
+  a {
+    color: #000;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

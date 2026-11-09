@@ -1,0 +1,137 @@
+{
+  "greek": {
+    "original": {
+      "title": "Ἀγαθὰ καὶ κακά.",
+      "paragraphs": [
+        [
+          "Ὑπὸ τῶν κακῶν τὰ ἀγαθὰ ἐδιώχθη ὡς ἀσθενῆ ὅντα:",
+          "εἰς οὐρανὸν δὲ ἀνῆλθεν.",
+          "Τὰ δὲ ἀγαθὰ ἠρώτησαν τὸν Δία πῶς εἶναι μετ'ἀνθρώπων.",
+          "Ὁ δὲ εἶπεν <μὴ> μετ' ἀλλήλων πάντα,",
+          "ἓν δὲ καθ' ἓν τοῖς ἀνθρώποις ἐπέρχεσθαι.",
+          "Διὰ τοῦτο τὰ μὲν κακὰ συνεχῆ τοῖς ἀνθρώποις,",
+          "ὡς πλησίον ὄντα, ἐπέρχεται,",
+          "τὰ δὲ ἀγαθὰ βράδιον,",
+          "ἐξ οὐρανοῦ κατιόντα."
+        ],
+        [
+          "Ὅτι ἀγαθῶν μὲν οὐδεὶς ταχέως ἐπιτυγχάνει,",
+          "ὑπὸ δὲ τῶν κακῶν ἕκαστος καθ' ἑκάστην πλήττεται."
+        ]
+      ]
+    }
+  },
+  "english": {
+    "translation": {
+      "title": "Blessings and Misfortunes",
+      "paragraphs": [
+        [
+          "Blessings were driven away by Misfortunes on the grounds that they were weak;",
+          "they ascended to heaven.",
+          "The Blessings asked Zeus how they might exist among humans.",
+          "He replied that they should not all go together,",
+          "but rather that each should come to humans one by one.",
+          "For this reason, Misfortunes befall humans continuously,",
+          "being close by,",
+          "whereas good things arrive more slowly,",
+          "descending from heaven."
+        ],
+        [
+          "This illustrates that no one attains good things quickly,",
+          "while everyone is struck by bad things at every turn."
+        ]
+      ]
+    }
+  },
+  "sindarin": {
+    "transliteration": {
+      "title": "The Blessings and the Misfortunes",
+      "paragraphs": [
+        [
+          "The Misfortunes once expelled the Blessings because [they] were weak;",
+          "[they] raised to heaven.",
+          "The blessings asked Manwë how ‹they will exist› may among Men.",
+          "He replied ‹to them› that not together ‹they will go› should,",
+          "but rather that each ‹will come› to Men ‹each individually›.",
+          "For reason this, misfortunes happen ever against men,",
+          "being ‹close by›",
+          "while blessings come ‹more slow›,",
+          "descending from heaven."
+        ],
+        [
+          "This illuminates that ‹no one› obtains blessings fast,",
+          "while everyone [is] shot by misfortunes ‹many times›."
+        ]
+      ]
+    },
+    "roman": {
+      "title": "In·eliaid ah in·egmoer",
+      "paragraphs": [
+        [
+          "In·egmoer erlu ennistanner in·eliaid añ gaeth i nîr wisg;",
+          "erianner na venel.",
+          "In·eliaid mabenner Manwe movan dhathar ce mig Edain.",
+          "Te dambent andin i ú vinegel menathar aen,",
+          "ach hennui i elia tolatha n'Edain erelia.",
+          "Añ gaeth hen, egmoer hídar ui dan Edain,",
+          "noed edos,",
+          "lo eliaid telir eñgwir,",
+          "duiad o venel."
+        ],
+        [
+          "Se celia i alphen gêd eliaid lim,",
+          "lo ilphen píthannen vo egmoer laelo."
+        ]
+      ]
+    },
+    "beleriand": {
+      "title": "    ",
+      "paragraphs": [
+        [
+          "          ",
+          "  ",
+          "        ",
+          "       ",
+          "      ",
+          "        ",
+          " ",
+          "   ",
+          "  "
+        ],
+        [
+          "      ",
+          "     "
+        ]
+      ]
+    },
+    "tengwar": {
+      "title": "    ",
+      "paragraphs": [
+        [
+          "          ",
+          "  ",
+          "        ",
+          "       ",
+          "      ",
+          "        ",
+          " ",
+          "   ",
+          "  "
+        ],
+        [
+          "      ",
+          "     "
+        ]
+      ]
+    },
+    "glossary": [
+      "ennista",
+      "minegel",
+      "elia",
+      "erelia",
+      "laelo"
+    ]
+  },
+  "chambry": "1",
+  "perry": "274"
+}
