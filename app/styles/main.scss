@@ -30,6 +30,28 @@ body {
   }
 }
 
+.page-background {
+  position: relative;
+  isolation: isolate;
+  min-height: 100vh;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+
+    background-image: var(--page-image);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: contain;
+
+    opacity: 0.3;
+  }
+}
+
 $moralMargin: 40px;
 
 .page-wrapper {
@@ -137,7 +159,7 @@ $moralMargin: 40px;
 .tale-group {
   border: 1px solid $dark-colour;
   border-radius: 3px;
-  background: $light-colour;
+  background: $light-colour-transparent;
   padding: 10px;
 
   .radio-group {
@@ -216,7 +238,8 @@ h1:has(ruby) {
   details {
     border: 1px solid $dark-colour;
     border-radius: 3px;
-    background: $light-colour;
+    // background: $light-colour;
+    background: $light-colour-transparent;
   }
 
   summary {
@@ -297,6 +320,7 @@ h1:has(ruby) {
   margin: 0;
   padding: 10px 12px 12px;
   background: $page-colour;
+  // background: $light-colour-transparent;
   border-radius: 3px;
 
   dt {

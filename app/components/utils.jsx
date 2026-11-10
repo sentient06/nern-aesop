@@ -145,7 +145,7 @@ export function RadioGroup({ varname, groupname, handleChange, options }) {
 
 export function RefSection({ chambry, perry }) {
   return (
-    <div class="reference">
+    <div className="reference">
       <ul>
         <li>
           Chambry {chambry}

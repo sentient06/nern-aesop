@@ -4,11 +4,21 @@ import {
   Meta,
   Outlet,
   Scripts,
-  ScrollRestoration
+  ScrollRestoration,
+  useMatches
 } from "react-router";
 import "./styles/main.scss";
 
+
 export function Layout({ children }) {
+  const matches = useMatches();
+
+  const tale = matches.find(
+    match => match.id === "routes/tale"
+  )?.loaderData;
+
+  const image = tale?.image;
+
   return (
     <html lang="en">
       <head>
@@ -33,9 +43,16 @@ export function Layout({ children }) {
             <Link to="/about.html">About</Link>
           </nav>
         </header>
-
-        <main>{children}</main>
-
+        <div
+          className="page-background"
+          style={{
+            "--page-image": image
+              ? `url("${image}")`
+              : "none"
+          }}
+        >
+          <main>{children}</main>
+        </div>
         <ScrollRestoration />
         <Scripts />
       </body>
