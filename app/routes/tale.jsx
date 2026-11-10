@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { getTale } from "../lib/tales.server.js";
-import { GreekSection, EnglishSection, SindarinSection, RefSection, RadioGroup, Glossary } from "../components/tale";
+import { findWordsInGlossary } from "../lib/glossary.server.js";
+import { RefSection, RadioGroup, Glossary } from "../components/utils";
+import { GreekSection, EnglishSection, SindarinSection } from "../components/taleGroups";
 
 export async function loader({ params }) {
   const match = /^tale-(\d+)\.html$/.exec(
@@ -11,7 +13,10 @@ export async function loader({ params }) {
     throw new Response("Not found", { status: 404 });
   }
 
-  return getTale(match[1]);
+  const tale = await getTale(match[1]);
+  const words = await findWordsInGlossary(tale.sindarin?.glossary ?? []);
+
+  return { ...tale, words };
 }
 
 export function meta({ data }) {
@@ -32,7 +37,8 @@ export default function Tale({ loaderData }) {
     english,
     sindarin,
     chambry,
-    perry
+    perry,
+    words
   } = tale;
 
   const [showGreek, setShowGreek] = useState('en');
@@ -46,42 +52,44 @@ export default function Tale({ loaderData }) {
   return (
     <div className="page-wrapper">
       <div className="tale-wrapper">
-        <div className="tale-group">
-          <RadioGroup
-            groupname="showGreekText"
-            varname={showGreek}
-            handleChange={handleChange}
-            options={[
-              { value: 'gr', label: 'Greek' },
-              { value: 'en', label: 'English' }
-            ]}
-          />
-          { showGreek === 'gr' ? (
-            <GreekSection
-              {...greek.original}
+        <div className="tale-columns">
+          <div className="tale-group">
+            <RadioGroup
+              groupname="showGreekText"
+              varname={showGreek}
+              handleChange={handleChange}
+              options={[
+                { value: 'gr', label: 'Greek' },
+                { value: 'en', label: 'English' }
+              ]}
+            />
+            { showGreek === 'gr' ? (
+              <GreekSection
+                {...greek.original}
+                setHoveredSentence={setHoveredSentence}
+                hoveredSentence={hoveredSentence}
+              />
+            ) : (
+              <EnglishSection
+                {...english.translation}
+                setHoveredSentence={setHoveredSentence}
+                hoveredSentence={hoveredSentence}
+              />
+            )}
+          </div>
+          <div className="tale-group">
+            <SindarinSection
+              {...sindarin}
               setHoveredSentence={setHoveredSentence}
               hoveredSentence={hoveredSentence}
             />
-          ) : (
-            <EnglishSection
-              {...english.translation}
-              setHoveredSentence={setHoveredSentence}
-              hoveredSentence={hoveredSentence}
-            />
-          )}
-        </div>
-        <div className="tale-group">
-          <SindarinSection
-            {...sindarin}
-            setHoveredSentence={setHoveredSentence}
-            hoveredSentence={hoveredSentence}
-          />
+          </div>
         </div>
         <div className="tale-image">
         </div>
       </div>
       <Glossary
-        words={sindarin.glossary}
+        words={words}
       />
       <RefSection
         chambry={chambry}

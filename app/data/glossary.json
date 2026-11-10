@@ -1,5 +1,115 @@
 {
   "ennista": {
-    "meaning": "to expel"
+    "meaning": "to expel",
+    "type": "verb",
+    "sources": [
+      {
+        "name": "√ET",
+        "type": "root",
+        "meaning": "out",
+        "url": "https://eldamo.org/content/words/word-1431869793.html"
+      },
+      {
+        "name": "nista",
+        "type": "verb",
+        "language": "Sindarin",
+        "meaning": "to press, thrust, force",
+        "url": "https://eldamo.org/content/words/word-2028366443.html"
+      }
+    ],
+    "compound": {
+      "name": "et+nid+tā",
+      "url": ""
+    }
+  },
+  "minegel": {
+    "meaning": "together",
+    "sources": [
+      {
+        "name": "min",
+        "type": "noun",
+        "language": "Sindarin",
+        "meaning": "one",
+        "url": ""
+      },
+      {
+        "name": "na/n'",
+        "type": "preposition",
+        "language": "Sindarin",
+        "meaning": "with",
+        "url": ""
+      },
+      {
+        "name": "egel",
+        "type": "noun",
+        "language": "Sindarin",
+        "meaning": "other",
+        "url": ""
+      }
+    ],
+    "compound": {
+      "name": "min+na+egel",
+      "url": ""
+    }
+  },
+  "elia": {
+    "meaning": "each",
+    "comment": "based on Q. ilya",
+    "sources": [
+      {
+        "name": "ilya",
+        "type": "pronoun",
+        "language": "Primitive Quendian",
+        "meaning": "each",
+        "url": ""
+      }
+    ]
+  },
+  "erelia": {
+    "meaning": "each individually",
+    "sources": [
+      {
+        "name": "er-",
+        "type": "prefix",
+        "language": "Primitive Quendian",
+        "meaning": "one",
+        "url": ""
+      },
+      {
+        "name": "ilya",
+        "type": "pronoun",
+        "language": "Primitive Quendian",
+        "meaning": "each",
+        "url": ""
+      }
+    ],
+    "compound": {
+      "name": "er+ilya",
+      "url": ""
+    }
+  },
+  "laelo": {
+    "meaning": "many times",
+    "comment": "based on Q. linnallumë",
+    "sources": [
+      {
+        "name": "lai-",
+        "type": "prefix",
+        "language": "Primitive Quendian",
+        "meaning": "many",
+        "url": ""
+      },
+      {
+        "name": "lū",
+        "type": "noun",
+        "language": "Primitive Quendian",
+        "meaning": "time",
+        "url": ""
+      }
+    ],
+    "compound": {
+      "name": "laj+lū",
+      "url": ""
+    }
   }
 }

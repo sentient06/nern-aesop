@@ -1,4 +1,4 @@
-import { readFile, readdir } from "node:fs/promises";
+import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 
 const directory = join(
@@ -23,9 +23,11 @@ export async function getGlossary() {
   }
 }
 
-export async function findWordsInGlossary() {
-  const files = await readdir(directory);
+export async function findWordsInGlossary(words = []) {
   const glossary = await getGlossary();
 
-  return glossary;
+  return words.map((word) => ({
+    word,
+    ...(glossary[word] ?? {})
+  }));
 }

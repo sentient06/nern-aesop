@@ -18,7 +18,7 @@ export async function loader() {
 export default function Home({ loaderData }) {
   return (
     <>
-      <h1>Sindarin Aesop</h1>
+      <h1>Tales of Aesop</h1>
       <p>Choose an tale to read.</p>
 
       <ul>

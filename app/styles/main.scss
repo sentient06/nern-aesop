@@ -19,33 +19,48 @@ body {
   background: $page-colour;
 }
 
+.page-title {
+  font-size: 2em;
+  line-height: 1.2;
+  font-weight: normal;
+  ruby-position: over;
+  rt {
+    margin: 0 0 0 5px;
+    color: $dark-colour;
+  }
+}
+
 $moralMargin: 40px;
 
 .page-wrapper {
   display: flex;
   flex-direction: column;
   .tale-wrapper {
-    display: flex;
-    flex-direction: row;
-    & > div {
-      flex-grow: 1;
-      // flex-basis: 25%;
-      max-width: 31rem;
+    display: grid;
+    grid-template-columns: minmax(0, 62rem) minmax(9rem, 1fr);
+    grid-template-areas: "columns image";
+    gap: 10px;
+    align-items: stretch;
+
+    .tale-columns {
+      grid-area: columns;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 10px;
+      min-width: 0;
     }
 
-    .tale-group,
     .tale-image {
-    }
-
-    .tale-image {
-      flex-grow: 1;
+      grid-area: image;
+      min-width: 0;
     }
 
     .tale-group {
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
-      flex-grow: 2;
+      align-items: stretch;
+      min-width: 0;
+      box-sizing: border-box;
 
       .radio-group {
         display: flex;
@@ -54,12 +69,16 @@ $moralMargin: 40px;
         display: flex;
         flex-direction: column;
         flex-grow: 2;
+        width: 100%;
+        min-width: 0;
 
         .tale-text-wrapper {
           display: flex;
           flex-direction: column;
-          align-items: flex-start;
+          align-items: stretch;
           flex-grow: 2;
+          width: 100%;
+          min-width: 0;
 
           p.moral {
             margin-top: auto;
@@ -92,17 +111,27 @@ $moralMargin: 40px;
 
         .tale-text {
           position: relative;
-          &:after {
-            content: ' ';
-          }
         }
       }
     }
   }
 }
 
-.tale-wrapper {
-  gap: 10px;
+@media (max-width: 48rem) {
+  .page-wrapper .tale-wrapper {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      "image"
+      "columns";
+
+    .tale-columns {
+      grid-template-columns: minmax(0, 1fr);
+    }
+
+    .tale-image {
+      min-height: 12rem;
+    }
+  }
 }
 
 .tale-group {
@@ -163,7 +192,9 @@ $moralMargin: 40px;
 
 .tale-text-wrapper {
   p {
-    align-self: flex-start;
+    align-self: stretch;
+    max-width: 100%;
+    overflow-wrap: break-word;
   }
 }
 
@@ -177,5 +208,186 @@ ruby {
 
 h1:has(ruby) {
   padding-top: 15px !important;
+}
+
+.glossary {
+  margin-top: 16px;
+
+  details {
+    border: 1px solid $dark-colour;
+    border-radius: 3px;
+    background: $light-colour;
+  }
+
+  summary {
+    padding: 8px 12px;
+    cursor: pointer;
+    list-style: none;
+    user-select: none;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    &::marker {
+      content: '';
+    }
+
+    &:focus-visible {
+      outline: 2px solid $anti-light;
+      outline-offset: -2px;
+    }
+  }
+
+  .glossary-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: normal;
+    font-variant: small-caps;
+    letter-spacing: 0.06em;
+    color: $dark-colour;
+
+    &::before {
+      content: '';
+      width: 0;
+      height: 0;
+      border-top: 4px solid transparent;
+      border-bottom: 4px solid transparent;
+      border-left: 5px solid currentColor;
+    }
+  }
+
+  summary:hover .glossary-toggle {
+    color: $anti-light;
+  }
+
+  details[open] .glossary-toggle::before {
+    transform: rotate(90deg);
+  }
+
+  details:not([open]) .glossary-list {
+    display: none;
+  }
+
+  details[open] .glossary-list {
+    padding: 0 14px 14px;
+  }
+
+  a {
+    color: $anti-light;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.glossary-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(26rem, 100%), 1fr));
+  gap: 10px;
+  margin: 0;
+}
+
+.glossary-entry {
+  margin: 0;
+  padding: 10px 12px 12px;
+  background: $page-colour;
+  border-radius: 3px;
+
+  dt {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 8px;
+    margin: 0;
+  }
+
+  dd {
+    margin: 6px 0 0;
+  }
+}
+
+.glossary-word {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.glossary-pos,
+.glossary-label {
+  font-size: 0.7em;
+  font-variant: small-caps;
+  letter-spacing: 0.04em;
+  color: $anti-light;
+}
+
+.glossary-meaning {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.glossary-comment {
+  margin: 4px 0 0;
+  font-size: 0.85em;
+  font-style: italic;
+  opacity: 0.75;
+}
+
+.glossary-compound {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5em;
+  margin: 8px 0 0;
+  font-size: 0.85em;
+}
+
+.glossary-sources {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 8px 0 0;
+  border-top: 1px solid $dark-colour;
+
+  li {
+    display: grid;
+    grid-template-columns: minmax(4.5rem, auto) minmax(9.5rem, 1.2fr) minmax(0, 1.4fr);
+    column-gap: 0.75em;
+    align-items: baseline;
+    padding: 3px 0;
+    font-size: 0.82em;
+    line-height: 1.35;
+  }
+}
+
+.glossary-source-name {
+  font-weight: 700;
+}
+
+.glossary-source-meta {
+  font-variant: small-caps;
+  letter-spacing: 0.03em;
+  opacity: 0.75;
+}
+
+@media (max-width: 40rem) {
+  .glossary-sources li {
+    grid-template-columns: auto 1fr;
+
+    .glossary-source-meaning {
+      grid-column: 1 / -1;
+    }
+  }
+}
+
+.glossary-source-meaning::before {
+  content: '“';
+}
+
+.glossary-source-meaning::after {
+  content: '”';
 }
 
