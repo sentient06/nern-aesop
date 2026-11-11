@@ -1,4 +1,20 @@
 {
+  "ogmaur": {
+    "meaning": "misfortune",
+    "type": "noun",
+    "comment": "based on its opposite \"alvar\" (good luck, fortune)",
+    "sources": [
+      {
+        "name": "√OKO",
+        "type": "root",
+        "meaning": "wicked, bad",
+        "url": "https://eldamo.org/content/words/word-3684490151.html"
+      }
+    ],
+    "compound": {
+      "name": "oko+māre"
+    }
+  },
   "ennista": {
     "meaning": "to expel",
     "type": "verb",
