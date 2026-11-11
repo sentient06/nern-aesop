@@ -28,9 +28,9 @@
         [
           "A man fashioned a wooden Hermes, brought it to the marketplace, and offered it for sale:",
           "and since no buyer came forward,",
-          "wishing to call some people out,",
-          "he proclaimed that he was selling a wish-fulfilling god who brought profit to its owner.",
-          "And when one of those present said to him:",
+          "wishing to attract some people,",
+          "he shouted that he was selling a benevolent deity who bestowed wealth.",
+          "But when one of the bystanders said to him:",
           "\"Hey you,",
           "why are you putting such a thing up for sale,",
           "instead of enjoying its benefits yourself?\"",
@@ -38,44 +38,108 @@
           "but he happens to distribute them slowly.\""
         ],
         [
-          "This fable suits a man who is so greedy for gain that he has no regard even for the gods."
+          "This fable is appropriate for a man greedy for dishonest gain, who does not even care about the gods."
         ]
       ] 
     }
   },
   "sindarin": {
     "transliteration": {
-      "title": "?",
+      "title": "The_seller [of]_statues",
       "paragraphs": [
         [
-          "?"
+          "[A]_dwarf fashioned Aulë wooden, brought it to_the market, and offered it for trade:",
+          "and because no buyer approached,",
+          "wishing to_draw persons few,",
+          "he_shouted that he_sells [a]_god generous who gives wealth.",
+          "But when one out_of the_bystanders said to_him:",
+          "Oi,",
+          "why you_sell such thing,",
+          "instead [of]_rejoicing of the_gains its for self?\"",
+          "The_dwarf answered, \"I_need benefits few now,",
+          "but he_gives them slow.\""
         ],
         [
-          "?"
+          "The_tale this [is]_suitable for_illustrating [a]_person greedy for gain dishonest, who not_cares even about the_gods."
         ]
       ]
     },
     "roman": {
-      "title": "?",
+      "title": "E·wamangor delin",
       "paragraphs": [
         [
-          "?"
+          "Cadhad echant Mahal dawen, odunc den eni vangath, a chídant den am bangad:",
+          "ah añ_gaeth_i û omachor anglennast,",
+          "iestad thaged bin nodui,",
+          "agon i gwamanga aenor fael i anna vaelig.",
+          "Ach io min ed in·esteryn ebenneb anden:",
+          "\"Alae,",
+          "amman gwamangog haed nad,",
+          "sennui gellad nan i·ñgennedai den an im?\"",
+          "E·gadhad dambent, \"Bauron 'ennedai nodui hí,",
+          "ach anna din guir.\""
         ],
         [
-          "?"
+          "E·bent he gammui añ·geliad ben velch añ gannada údir, i ú-grith ída oh in·aenyr."
+        ]
+      ]
+    },
+    "beleriand": {
+      "title": " ",
+      "paragraphs": [
+        [
+          "              ",
+          "      ",
+          "   ",
+          "       ",
+          "       ",
+          "",
+          "   ",
+          "      ",
+          "      ",
+          "   "
+        ],
+        [
+          "              "
         ]
       ]
     },
     "tengwar": {
+      "title": " ",
+      "paragraphs": [
+        [
+          "              ",
+          "      ",
+          "   ",
+          "       ",
+          "       ",
+          "",
+          "   ",
+          "      ",
+          "      ",
+          "   "
+        ],
+        [
+          "              "
+        ]
+      ]
     },
     "glossary": [
-      "ennista",
-      "minegel",
-      "elia",
-      "erelia",
-      "laelo"
+      "tolen",
+      "Mahal",
+      "cída-",
+      "gwamanga-",
+      "astaron",
+      "saed",
+      "gannada",
+      "ída"
     ]
   },
-  "chambry": "1",
-  "perry": "274"
+  "chambry": "2",
+  "perry": "99",
+  "comments": [
+    "The man is replaced with a dwarf.",
+    "Hermes is replaced with Aulë."
+  ],
+  "image": "/images/tales/statue-seller.png"
 }

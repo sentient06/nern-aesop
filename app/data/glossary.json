@@ -111,5 +111,173 @@
       "name": "laj+lū",
       "url": ""
     }
+  },
+  "tolen": {
+    "meaning": "statue",
+    "type": "noun",
+    "sources": [
+      {
+        "name": "√TOL",
+        "type": "root",
+        "meaning": "stand up above",
+        "url": "https://eldamo.org/content/words/word-3250945375.html"
+      },
+      {
+        "name": "-inā",
+        "type": "suffix",
+        "meaning": "adjective; passive participle",
+        "url": "https://eldamo.org/content/words/word-680783459.html"
+      }
+    ],
+    "compound": {
+      "name": "tol+inā",
+      "url": "https://quettamorphosis.elvish.nz/index.html?s=&i=tol.ina%3A&off=PE%2C4YMLLL%2CD4SY8V%2CLB2XLT%2CPCIKVX%2CT2LWVF%2CT65GEJ%2CTK6XCF%2C14ZYNUV%2C16HSN5B%2C1DM4ETD%2C1DM4ETE%2C1HVL2UT%2C1RZ3P2T%2C1X9M9DD%2C1XN4L2D#rule-EM1Z87"
+    }
+  },
+  "cída-": {
+    "meaning": "to offer",
+    "type": "verb",
+    "comment": "based on ᴺQ. céta-",
+    "sources": [
+      {
+        "name": "√KE/EKE",
+        "type": "root",
+        "meaning": "may; have opportunity",
+        "url": "https://eldamo.org/content/words/word-2693777695.html"
+      }
+    ],
+    "compound": {
+      "name": "kē+tā",
+      "url": "https://quettamorphosis.elvish.nz/?s=&i=ke%3A.ta%3A&off=4YMLLL%2CD4SY8V%2CDGIAQL%2CLB2XLT%2CPCIKVX%2CT2LWVF%2CT65GEJ%2CTK6XCF%2C14ZYNUV%2C16HSN5B%2C1DM4ETD%2C1DM4ETE%2C1HVL2UT%2C1RZ3P2T%2C1X9M9DD%2C1XN4L2D&ri=19JASGR%3AapplyToMorphemes%3D0#rule-111SIVJ"
+    }
+  },
+  "Mahal": {
+    "meaning": "Aulë",
+    "type": "proper name",
+    "language": "Khuzdûl",
+    "comment": "The name the dwarves have to Aulë, in their original language."
+  },
+  "gwamanga-": {
+    "meaning": "to sell",
+    "type": "verb",
+    "comment": "based on ᴺQ. aumanca-",
+    "sources": [
+      {
+        "name": "wā-",
+        "type": "prefix",
+        "language": "Primitive Quendian",
+        "meaning": "away",
+        "url": "https://eldamo.org/content/words/word-3281650335.html"
+      },
+      {
+        "name": "√MBAKH",
+        "type": "root",
+        "meaning": "exchange",
+        "url": "https://eldamo.org/content/words/word-2888127845.html"
+      }
+    ],
+    "compound": {
+      "name": "wā+mbaŋkʰa"
+    }
+  },
+  "astaron": {
+    "meaning": "bystander",
+    "type": "noun",
+    "comment": "based on Q. astarindo",
+    "sources": [
+      {
+        "name": "√AS",
+        "type": "root",
+        "meaning": "beside",
+        "url": "https://eldamo.org/content/words/word-1944887875.html"
+      },
+      {
+        "name": "√TAR",
+        "type": "root",
+        "meaning": "stand",
+        "url": "https://eldamo.org/content/words/word-1356167137.html"
+      },
+      {
+        "name": "✶-on(do)",
+        "type": "suffix",
+        "language": "Primitive Quendian",
+        "meaning": "masculine suffix",
+        "url": "https://eldamo.org/content/words/word-3341885995.html"
+      }
+    ],
+    "compound": {
+      "name": "as+tar+on"
+    }
+  },
+  "saed": {
+    "meaning": "such",
+    "type": "adverb",
+    "comment": "based on ᴺQ. saitë",
+    "sources": [
+      {
+        "name": "sa",
+        "type": "pronoun",
+        "meaning": "impersonal thing; it",
+        "language": "Primitive Quendian",
+        "url": "https://eldamo.org/content/words/word-3974540197.html"
+      },
+      {
+        "name": "✶-iti",
+        "type": "suffix",
+        "meaning": "habit or special association with the verbal action",
+        "language": "Primitive Quendian",
+        "url": "https://eldamo.org/content/words/word-4101755055.html"
+      }
+    ],
+    "compound": {
+      "name": "sa+iti",
+      "url": "https://quettamorphosis.elvish.nz/index.html?s=&i=sa.iti&off=PE%2C4YMLLL%2CD4SY8V%2CDGIAQL%2CLB2XLT%2CPCIKVX%2CT2LWVF%2CT65GEJ%2CTK6XCF%2C14ZYNUV%2C16HSN5B%2C18HPRET%2C19H0Q4R%2C1DM4ETD%2C1DM4ETE%2C1HVL2UT%2C1RZ3P2T%2C1X9M9DD%2C1XN4L2D&ri=19JASGR%3AapplyToMorphemes%3D0"
+    }
+  },
+  "gannada": {
+    "meaning": "gain, profit",
+    "type": "noun",
+    "comment": "based on ᴺS verb ganna-",
+    "sources": [
+      {
+        "name": "√GYANTA",
+        "type": "root",
+        "meaning": "(en)large, increase",
+        "url": "https://eldamo.org/content/words/word-877900955.html"
+      },
+      {
+        "name": "-ta",
+        "type": "suffix",
+        "language": "Primitive Quendian",
+        "meaning": "single product of an action",
+        "url": "https://eldamo.org/content/words/word-1871709441.html"
+      }
+    ],
+    "compound": {
+      "name": "gjanta+ta",
+      "url": "https://quettamorphosis.elvish.nz/index.html?s=&i=gjanta.ta&off=PE%2C4YMLLL%2CD4SY8V%2CDGIAQL%2CLB2XLT%2CPCIKVX%2CT2LWVF%2CT65GEJ%2CTK6XCF%2C14ZYNUV%2C16HSN5B%2C18HPRET%2C19H0Q4R%2C1DM4ETD%2C1DM4ETE%2C1HVL2UT%2C1RZ3P2T%2C1X9M9DD%2C1XN4L2D&ri=19JASGR%3AapplyToMorphemes%3D0"
+    }
+  },
+  "ída": {
+    "meaning": "even",
+    "comment": "based on ᴺQ. éta",
+    "sources": [
+      {
+        "name": "√Ē",
+        "type": "root",
+        "meaning": "indeed",
+        "url": "https://eldamo.org/content/words/word-2862017893.html"
+      },
+      {
+        "name": "ta",
+        "type": "conjunction",
+        "meaning": "that, then",
+        "url": "https://eldamo.org/content/words/word-567076583.html"
+      }
+    ],
+    "compound": {
+      "name": "ēta",
+      "url": "https://quettamorphosis.elvish.nz/index.html?s=&i=e%3Ata&off=PE%2C4YMLLL%2CD4SY8V%2CDGIAQL%2CLB2XLT%2CPCIKVX%2CT2LWVF%2CT65GEJ%2CTK6XCF%2C16HSN5B%2C1A7WZRV%2C1DM4ETD%2C1DM4ETE%2C1HVL2UT%2C1RZ3P2T%2C1TGICH7%2C1X9M9DD%2C1XN4L2D&on=14ZYNUV&ri=19JASGR%3AapplyToMorphemes%3D0#rule-EM1Z87"
+    }
   }
 }
