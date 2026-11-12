@@ -1,6 +1,6 @@
 export function meta() {
   return [
-    { title: "About | My Website" },
+    { title: "Nern Aesop | About" },
     {
       name: "description",
       content: "About this website."

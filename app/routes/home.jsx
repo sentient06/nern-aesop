@@ -3,7 +3,7 @@ import { listTales } from "../lib/tales.server.js";
 
 export function meta() {
   return [
-    { title: "Home | My Website" },
+    { title: "Nern Aesop | Home" },
     {
       name: "description",
       content: "Browse all tales."
