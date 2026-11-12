@@ -82,7 +82,7 @@ export function TaleTextWrapper({
                           {base.replaceAll('_', ' ')}
                         </span>
                         <rt translate={translate ? 'yes' : 'no'}>
-                          {annotations[i].replaceAll('_', ' ') ?? ''}
+                          {annotations?.[i]?.replaceAll('_', ' ') ?? ''}
                         </rt>
                       </ruby>
                     </Fragment>

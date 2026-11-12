@@ -82,7 +82,7 @@
     ]
   },
   "erelia": {
-    "meaning": "each individually",
+    "meaning": "each individually; successively",
     "sources": [
       {
         "name": "er-",
@@ -103,6 +103,28 @@
       "name": "er+ilya",
       "url": ""
     }
+  },
+  "min elia lû": {
+    "meaning": "one at a time",
+    "type": "expression",
+    "sources": [
+      {
+        "name": "min",
+        "type": "noun",
+        "language": "Sindarin",
+        "meaning": "one"
+      },
+      {
+        "name": "elia",
+        "type": "determiner",
+        "meaning": "each"
+      },
+      {
+        "name": "lû",
+        "type": "noun",
+        "meaning": "time, occasion"
+      }
+    ]
   },
   "laelo": {
     "meaning": "many times",
@@ -126,6 +148,28 @@
     "compound": {
       "name": "laj+lū",
       "url": ""
+    }
+  },
+  "nogol-": {
+    "meaning": "to suffer",
+    "comment": "based on Latin \"sufferre\", \"under-bear\"",
+    "sources": [
+      {
+        "name": "√NŪ/UNU",
+        "type": "root",
+        "meaning": "down, under",
+        "url": "https://eldamo.org/content/words/word-3208326415.html"
+      },
+      {
+        "name": "√KOL",
+        "type": "root",
+        "meaning": "bear, carry, wear",
+        "url": "https://eldamo.org/content/words/word-2338133529.html"
+      }
+    ],
+    "compound": {
+      "name": "nū+kol",
+      "url": "https://quettamorphosis.elvish.nz/?s=&i=nu%3A.kol&off=PE%2C4YMLLL%2CD4SY8V%2CLB2XLT%2CPCIKVX%2CT2LWVF%2CT65GEJ%2CTK6XCF%2C14ZYNUV%2C16HSN5B%2C1DM4ETD%2C1DM4ETE%2C1HVL2UT%2C1RZ3P2T%2C1X9M9DD%2C1XN4L2D&mb=19JASGR%3A0#rule-19JASGR"
     }
   },
   "tolen": {

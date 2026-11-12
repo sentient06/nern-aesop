@@ -14,15 +14,19 @@ Glossary:
 eliad pl. eliaid
 ogmaur pl. egmoer
 
+! change noed for nîl
+! change eliad for alvar, pl. elvair
+! change erelia for 'min elia lû'
+ail < Q. ilya ???
 
 Missing:
-weak gwesg https://eldamo.org/content/words/word-1396734921.html
-alone ereb https://eldamo.org/content/words/word-3983103205.html
-once erlu https://eldamo.org/content/words/word-1628059847.html
-never allu https://eldamo.org/content/words/word-3188922503.html
-to-ask mabed- https://eldamo.org/content/words/word-3651362727.html
-to-reach raetha- https://eldamo.org/content/words/word-2330232291.html
-duia [nd-] descend https://eldamo.org/content/words/word-2900548937.html
+- weak gwesg https://eldamo.org/content/words/word-1396734921.html
+- never allu https://eldamo.org/content/words/word-3188922503.html
+- to-ask mabed- https://eldamo.org/content/words/word-3651362727.html
+x duia [nd-] descend https://eldamo.org/content/words/word-2900548937.html
+! alone ereb https://eldamo.org/content/words/word-3983103205.html
+! once erlu https://eldamo.org/content/words/word-1628059847.html
+! to-reach raetha- https://eldamo.org/content/words/word-2330232291.html
 
 
 Required Neologisms:
@@ -282,14 +286,14 @@ Tale 2
 
 Missing
 
-echad form, shape, cut https://eldamo.org/content/words/word-630017767.html
+- echad form, shape, cut https://eldamo.org/content/words/word-630017767.html
 twen wooden https://eldamo.org/content/words/word-3612484395.html
-tog- bring https://eldamo.org/content/words/word-1436908105.html
-bangath market https://eldamo.org/content/words/word-1253489419.html
-dambed- [nd-] answer https://eldamo.org/content/words/word-3229749443.html
+- tog- bring https://eldamo.org/content/words/word-1436908105.html
+- bangath market https://eldamo.org/content/words/word-1253489419.html
+- dambed- [nd-] answer https://eldamo.org/content/words/word-3229749443.html
 baura- [mb-] need https://eldamo.org/content/words/word-4019869031.html
 pent tale https://eldamo.org/content/words/word-110682783.html
-melch greedy https://eldamo.org/content/words/word-1141892881.html
+- melch greedy https://eldamo.org/content/words/word-1141892881.html
 
 
 
