@@ -415,3 +415,40 @@ h1:has(ruby) {
   content: '”';
 }
 
+.tale-navigation {
+  margin: 16px;
+  // border: 1px solid $dark-colour;
+  // border-radius: 3px;
+  // background: $light-colour-transparent;
+
+  display: flex;
+
+  a {
+    color: #000;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  
+  justify-content: space-between;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+

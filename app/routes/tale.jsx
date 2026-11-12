@@ -1,5 +1,9 @@
 import { useState } from 'react';
-import { getTale } from "../lib/tales.server.js";
+import { Link } from "react-router";
+import {
+  getTale,
+  getAdjacentTales
+} from "../lib/tales.server.js";
 import { findWordsInGlossary } from "../lib/glossary.server.js";
 import { RefSection, RadioGroup, Glossary } from "../components/utils";
 import { GreekSection, EnglishSection, SindarinSection } from "../components/taleGroups";
@@ -13,18 +17,26 @@ export async function loader({ params }) {
     throw new Response("Not found", { status: 404 });
   }
 
+  const navigation = await getAdjacentTales(match[1]);
   const tale = await getTale(match[1]);
   const words = await findWordsInGlossary(tale.sindarin?.glossary ?? []);
 
-  return { ...tale, words };
+  return { ...tale, words, navigation };
 }
 
-export function meta({ data }) {
+export function meta({ loaderData }) {
+  const title = loaderData?.english?.translation?.title;
+  const description = loaderData?.description;
+
   return [
-    { title: `${data?.english?.translation?.title ?? "Tale"} | Nern Aesop` },
+    {
+      title: title
+        ? `${title} | Nern Aesop`
+        : "Nern Aesop"
+    },
     {
       name: "description",
-      content: data?.description ?? ""
+      content: description ?? ""
     }
   ];
 }
@@ -91,6 +103,22 @@ export default function Tale({ loaderData }) {
       <Glossary
         words={words}
       />
+      <div className="tale-navigation" aria-label="Tale navigation">
+        <div>
+        {tale.navigation.previous && (
+          <Link to={`/tale-${tale.navigation.previous}.html`}>
+            <i className="arrow left"></i> Previous tale
+          </Link>
+        )}
+        </div>
+        <div>
+        {tale.navigation.next && (
+          <Link to={`/tale-${tale.navigation.next}.html`}>
+            Next tale <i className="arrow right"></i>
+          </Link>
+        )}
+        </div>
+      </div>
       <RefSection
         chambry={chambry}
         perry={perry}

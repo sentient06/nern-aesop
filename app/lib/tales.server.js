@@ -42,3 +42,19 @@ export async function listTales() {
     })
   );
 }
+
+export async function getAdjacentTales(id) {
+  const files = await readdir(directory);
+
+  const ids = files
+    .filter(name => /^\d+\.json$/.test(name))
+    .map(name => name.replace(".json", ""))
+    .sort((a, b) => Number(a) - Number(b));
+
+  const index = ids.indexOf(String(id));
+
+  return {
+    previous: index > 0 ? ids[index - 1] : null,
+    next: index >= 0 ? ids[index + 1] ?? null : null
+  };
+}
