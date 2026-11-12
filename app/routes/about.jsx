@@ -13,8 +13,7 @@ export default function About() {
     <tale>
       <h1>About</h1>
       <p>
-        This website is built using React Router,
-        static HTML generation and JSON files.
+        This website is a collection of the 6th century BCE Greek fables attributed to Aesop, framed in Arda, translated into Neo-Sindarin.
       </p>
     </tale>
   );

@@ -36,13 +36,16 @@ export function Layout({ children }) {
       <body>
         <header>
           <nav>
-            <Link to="/">
-              <span className="tengwar page-title" translate="no">
-                 
-              </span>
-            </Link>
-            {" | "}
-            <Link to="/about.html">About</Link>
+            <div>
+              <Link to="/">
+                <span className="tengwar page-title" translate="no">
+                   
+                </span>
+              </Link>
+            </div>
+            <div>
+              <Link to="/about.html">About</Link>
+            </div>
           </nav>
         </header>
         <div

@@ -21,11 +21,11 @@ export default function Home({ loaderData }) {
       <h1>Tales of Aesop</h1>
       <p>Choose an tale to read.</p>
 
-      <ul>
+      <ul className="tales-list">
         {loaderData.map(tale => (
           <li key={tale.id}>
             <Link to={`/tale-${tale.id}.html`}>
-              {tale.title}
+              {tale.id}. {tale.title}
             </Link>
           </li>
         ))}
