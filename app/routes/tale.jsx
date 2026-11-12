@@ -21,7 +21,7 @@ export async function loader({ params }) {
 
 export function meta({ data }) {
   return [
-    { title: `${data?.english.?translation?.title ?? "Tale"} | Nern Aesop` },
+    { title: `${data?.english?.translation?.title ?? "Tale"} | Nern Aesop` },
     {
       name: "description",
       content: data?.description ?? ""
