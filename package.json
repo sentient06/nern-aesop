@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "react-router dev",
-    "build": "react-router build && node scripts/flatten-html.mjs"
+    "build": "react-router build && node scripts/flatten-html.mjs && node scripts/generate-sitemap.mjs"
   },
   "keywords": [],
   "author": "",
