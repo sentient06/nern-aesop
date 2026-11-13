@@ -54,7 +54,7 @@ export function TaleTextWrapper({
       {paragraphs.map((paragraph, paragraphIndex, arr) => {
         const isMoral = arr.length - 1 === paragraphIndex;
         return (
-          <p key={paragraphIndex} className={isMoral ? 'moral' : ''} translate={translate ? 'yes' : undefined}>
+          <p key={paragraphIndex} className={isMoral ? 'moral' : ''} translate={translate ? 'yes' : 'no'}>
           {paragraph.map((sentence, sentenceIndex) => {
             const id = `${paragraphIndex}-${sentenceIndex}`;
 
@@ -74,6 +74,7 @@ export function TaleTextWrapper({
                   onMouseLeave={() => setHoveredSentence(null)}
                   translate={translate ? 'yes' : 'no'}
                 >
+                  {sentenceIndex > 0 && ' '}
                   {bases.map((base, i) => (
                     <Fragment key={i}>
                       {i > 0 && ' '}
@@ -185,7 +186,7 @@ export function Glossary({ words }) {
         {words.map((entry) => (
           <div className="glossary-entry" key={entry.word}>
             <dt>
-              <span className="glossary-word">{entry.word}</span>
+              <span className="glossary-word" translate="no">{entry.word}</span>
               {entry.type ? (
                 <span className="glossary-pos">{entry.type}</span>
               ) : null}
@@ -201,7 +202,7 @@ export function Glossary({ words }) {
                 <p className="glossary-compound">
                   <span className="glossary-label">compound</span>
                   <GlossaryLink href={entry.compound.url}>
-                    {entry.compound.name}
+                    <span translate="no">{entry.compound.name}</span>
                   </GlossaryLink>
                 </p>
               ) : null}
@@ -209,7 +210,7 @@ export function Glossary({ words }) {
                 <ul className="glossary-sources">
                   {entry.sources.map((source, index) => (
                     <li key={`${source.name}-${index}`}>
-                      <span className="glossary-source-name">
+                      <span className="glossary-source-name" translate="no">
                         <GlossaryLink href={source.url}>
                           {source.name}
                         </GlossaryLink>
