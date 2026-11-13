@@ -3,6 +3,7 @@
     "meaning": "misfortune",
     "type": "noun",
     "comment": "based on its opposite \"alvar\" (good luck, fortune)",
+    "url": "https://sindarin.dictionary.elvish.nz/words/ogmaur.html",
     "sources": [
       {
         "name": "√OKO",
@@ -18,6 +19,7 @@
   "ennista": {
     "meaning": "to expel",
     "type": "verb",
+    "url": "https://sindarin.dictionary.elvish.nz/words/ennista.html",
     "sources": [
       {
         "name": "√ET",
@@ -40,6 +42,7 @@
   },
   "minegel": {
     "meaning": "together",
+    "url": "https://sindarin.dictionary.elvish.nz/words/minegel.html",
     "sources": [
       {
         "name": "min",
@@ -68,9 +71,10 @@
       "url": ""
     }
   },
-  "elia": {
+  "ail": {
     "meaning": "each",
     "comment": "based on Q. ilya",
+    "url": "https://sindarin.dictionary.elvish.nz/words/ail.html",
     "sources": [
       {
         "name": "ilya",
@@ -104,9 +108,10 @@
       "url": ""
     }
   },
-  "min elia lû": {
+  "min ail lû": {
     "meaning": "one at a time",
     "type": "expression",
+    "url": "https://sindarin.dictionary.elvish.nz/words/min-ail-lu.html",
     "sources": [
       {
         "name": "min",
@@ -126,9 +131,10 @@
       }
     ]
   },
-  "laelo": {
+  "lael": {
     "meaning": "many times",
     "comment": "based on Q. linnallumë",
+    "url": "https://sindarin.dictionary.elvish.nz/words/lael.html",
     "sources": [
       {
         "name": "lai-",
@@ -153,6 +159,7 @@
   "nogol-": {
     "meaning": "to suffer",
     "comment": "based on Latin \"sufferre\", \"under-bear\"",
+    "url": "https://sindarin.dictionary.elvish.nz/words/nogol.html",
     "sources": [
       {
         "name": "√NŪ/UNU",
